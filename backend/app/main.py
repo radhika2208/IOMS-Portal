@@ -22,9 +22,7 @@ app = FastAPI(
 # CORS Middleware Configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "https://ioms-portal.vercel.app/"
-    ],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
